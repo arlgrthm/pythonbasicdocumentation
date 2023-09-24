@@ -1,0 +1,289 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Python - Basic Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="What_is_Python">
+            <header>What is Python</header>
+                <p>
+                    <span>Python </span> often referred to as a "programming language for everyone," is a versatile and powerful tool that has revolutionized the world of software development. Whether you're an aspiring coder, a data scientist, a web developer, or simply someone curious about the world of programming, Python is a language that welcomes all. In this exploration, we will unravel the essence of Python, delving into its origins, its fundamental features, and the myriad ways it has become an indispensable part of modern technology and innovation. Join us on this journey to understand "What is Python?" and discover the boundless possibilities it offers.
+                </p>
+        </section> 
+        <section class="main-section" id="Why_Choose_Python">
+            <header>Why Choose Python</header>
+            <p>
+                <span>Readability and Simplicity </span> - Python is renowned for its clean and readable syntax. Its use of indentation for code blocks and straightforward, English-like keywords make it exceptionally user-friendly. This readability not only makes it an excellent language for beginners but also speeds up development for experienced programmers. With Python, you can write more code with fewer lines, enhancing productivity and reducing the likelihood of errors.
+            </p>
+            <p>
+                <span>Versatility and Broad Application </span> - Python is incredibly versatile and finds applications in various domains. It's a popular choice for web development (Django, Flask), data analysis and machine learning (NumPy, pandas, scikit-learn), scientific computing (SciPy), automation (scripting), and much more. Python's extensive standard library and a vast ecosystem of third-party packages ensure that you can find a solution for almost any programming task.
+            </p>
+            <p>
+                <span>Community and Support </span> - Python boasts a vibrant and active community of developers and enthusiasts. This community contributes to a wealth of resources, including documentation, tutorials, forums, and libraries. Additionally, Python has a strong corporate backing, with companies like Google, Facebook, and Netflix using it extensively in their projects. This means that Python enjoys robust support and a bright future, with regular updates and improvements to the language.
+            </p>
+        </section>
+        <section class="main-section" id="Python_Basic_Syntax">
+            <header>Python Basic Syntax</header>
+                <p>Python's syntax is known for its simplicity and readability. Here are some key elements of Python's basic syntax:</p>
+                <ul>
+                    <li><span> Indentation: </span> Python uses indentation (whitespace) to define code blocks, like loops and functions, instead of curly braces or keywords. Proper indentation is crucial for code to run correctly.</li>
+                    <li><span> Variable: </span> Variables are created by assigning a value to a name. Python dynamically infers data types, so you don't need to specify them explicitly</li>
+                    <pre class="code-block"><code class="language-python">
+                        # in python, there is no need to specify the type of the variable
+                        
+                        x = 5    #this is an int
+                        y = "John"   #this is a string
+                        print(x)     
+                        print(y)
+                    </code></pre>
+                    <li><span> Statements: </span> In Python, statements are individual lines of code that perform specific actions, such as assigning values to variables, controlling program flow with conditionals and loops, defining functions, and handling exceptions</li>
+                    <pre class="code-block"><code class="language-python">
+                        # Assignment Statement
+                            number = 10;      # integer
+                            pizza_flavor = "Ham and Cheese"   # string
+
+                        # Print Statement
+                            print('Hello World!')
+                            print(number)
+
+                        # Conditional Statement - Just a Preview
+                            if x > 0:
+                                print("Out of stock")
+                            else: 
+                                print("Available!")
+                        
+                        # Defining functions
+                        def pizza_order(flavor, price):
+                            print(flavor + " " + price)
+                            # call it 
+                            pizza_order()
+
+                    </code></pre>
+                    <li><span> Comments: </span> Comments in Python are text annotations within your code that are ignored by the Python interpreter but serve as helpful explanations for programmers, making code more readable and maintainable</li>
+                    <pre class="code-block"><code class="language-python">
+                        # this is a single line comment!
+
+                        """
+                        comment stuff more than just a one line!
+                        to make it more readable
+                        and maintainable
+                        """
+                    </code></pre>
+                    <li><span>Strings and Numbers</span> Strings in Python are sequences of characters enclosed in single, double, or triple quotes, and they are used to represent text data. Meanwhile, Numbers in Python can be of various types, including integers (whole numbers), floating-point numbers (decimal numbers), and complex numbers for numerical operations</li>
+                    <pre class="code-block"><code class="language-python">
+                        # this is a single line comment!
+
+                        """
+                        comment stuff more than just a one line!
+                        to make it more readable
+                        and maintainable
+                        """
+                    </code></pre>
+                </ul>
+        </section>
+        <section class="main-section" id="Python_Data_Types">
+            <header>Python Data Types</header>
+                <p>Python supports several built-in data types. Here is a list of some of the fundamental data types in Python.</p>
+                <li><code>` int `</code> (Integer) - Represents whole numbers, e.g., 5, -10, 1000.</li>
+                <li><code>` float `</code> (Floating number) - Represents decimal numbers, e.g., 3.14, 0.01, -2.5.</li>
+                <li><code>` str `</code> (String) - Represents text, e.g., <code>"Hello, World!", 'Python'.</code></li>
+                <li><code>` bool `</code> (Boolean) - Represents either True or False.</li>
+                <li><code>` list `</code>Represents an ordered collection of elements, e.g.,<code>[1, 2, 3], ['apple', 'banana', 'cherry']</code>.</li>
+                <li><code>` tuple `</code> Similar to lists but immutable (cannot be modified after creation), e.g.,<code>(1, 2, 3), ('red', 'green', 'blue').</code>.</li>
+        </section>
+        <section class="main-section" id="Python_Control_Structures">
+            <header>Python Control Structures</header>
+                <p>Control structures in Python are fundamental building blocks that allow you to manage the flow and execution of your code. They enable you to make decisions, repeat actions, and define the order in which your program executes instructions. Python provides several control structures, including conditional statements (if-elif-else), loops (for and while), and more, which empower you to create flexible and dynamic programs that respond to various conditions and requirements.</p>
+                <p>These are the examples:</p>
+            <li><span>Conditional Statements (if-elif-else):</span>allow you to execute different blocks of code based on specified conditions.</li>
+            <pre class="code-block"><code class="language-python">
+            # if elif else
+                age = 18
+                if age < 18:
+                    print("You are a minor.")
+                elif age == 18:
+                    print("You are just 18 years old.")
+                else:
+                    print("You are an adult.")
+            </code></pre>
+            <li><span>Loops (for and while):</span>Loops enable you to repeat a block of code multiple times.</li>
+            <pre class="code-block"><code class="language-python">
+                # Using a for loop to iterate through a list
+                fruits = ["apple", "banana", "cherry"]
+                for fruit in fruits:
+                    print("I like", fruit)
+                
+                # Using a while loop to count from 1 to 5
+                count = 1
+                while count <= 5:
+                    print(count)
+                    count += 1
+                
+            </code></pre>
+            <li><span>Break and Continue:</span>break is used to exit a loop prematurely, and continue is used to skip the current iteration and move to the next.</li>
+            <pre class="code-block"><code class="language-python">
+                for num in range(1, 11):
+                if num == 5:
+                break  # Exit the loop when num equals 5
+                    print(num)
+
+                for num in range(1, 11):
+                    if num % 2 == 0:
+                    continue  # Skip even numbers
+                    print(num)  
+            </code></pre>
+        </section>
+        <section class="main-section" id="Python_Resources">
+            <header>Python Resources</header>
+                <p><span>If you wish to know more about Python: </span></p>
+                <p>
+                    <a href="https://www.python.org/" target="_blank"><span>Official Python Website</span></a> The official website of the Python programming language. It provides downloads, documentation, and news about Python.
+                </p>
+                <p>
+                    <a href="https://docs.python.org/3/" target="_blank"><span>Python Documentation</span></a> The official Python documentation provides in-depth information about the language, libraries, and modules.
+                </p>
+                <p>
+                    <a href="https://www.reddit.com/r/Python/" target="_blank"><span>Python Reddit Community</span></a>The Python subreddit is an active community for discussions, questions, and news related to Python.
+                </p>
+        </section> 
+    </main>
+
+    <nav id="navbar">
+        <header><h1>Python <span>Documentation</span></h1></header>
+        <li><a href="#What_is_Python" class="nav-link">What is Python</a></li>
+        <li><a href="#Why_Choose_Python" class="nav-link">Why Choose Python</a></li>
+        <li><a href="#Python_Basic_Syntax" class="nav-link">Python Basic Syntax</a></li>
+        <li><a href="#Python_Data_Types" class="nav-link">Python Data Types</a></li>
+        <li><a href="#Python_Control_Structures" class="nav-link">Python Control Structures</a></li>
+        <li><a href="#Python_Resources" class="nav-link">Python Resources</a></li>
+    </nav>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+#main-doc {
+    flex: 4;
+    background-color: white;
+    
+}
+
+.main-section {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-section header {
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: 1px solid blue;
+}
+
+.main-section p {
+    margin: 30px 80px;
+    line-height: 2.0;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.main-section p span {
+    font-weight: bold;
+}
+
+.main-section p a {
+    text-decoration: none;
+    background-color: darkblue;
+    padding: 10px;
+    color: yellow;
+}
+.main-section li {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+.main-section li span{
+    font-weight: bold;
+    line-height: 2.0;
+}
+
+.code-block {
+    width: 80%;
+    margin: 10px auto;
+    background-color: black;
+}
+
+.code-block code {
+    font-size: 15px;
+    color: white;
+    margin-left: 0;
+}
+
+#navbar {
+    flex: 1;
+    background-color: darkblue;
+    padding: 12px;
+    scroll-behavior: auto;
+    border-right: 5px solid lightblue;
+}
+
+#navbar h1{
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+#navbar span {
+    color: lightskyblue;
+}
+
+#navbar li {
+    margin-top: 10px;
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-bottom: 5px solid white;
+}
+
+#navbar a {
+    text-decoration:  none;
+    color: yellow;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    
+}
+
+** end of undefined **
+
